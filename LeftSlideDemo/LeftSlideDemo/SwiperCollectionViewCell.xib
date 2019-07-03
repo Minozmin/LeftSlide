@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SwiperCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="305" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="305" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiW-Sx-kTX">
+                        <rect key="frame" x="255" y="44" width="50" height="72"/>
+                        <color key="backgroundColor" red="1" green="0.061130833670000002" blue="0.11470196050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="tgd-3z-e8O"/>
+                        </constraints>
+                        <state key="normal" title="删除"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jag-1O-cOi">
+                        <rect key="frame" x="205" y="44" width="50" height="72"/>
+                        <color key="backgroundColor" red="1" green="0.51764705879999995" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="收藏"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="raP-AN-9b1">
+                        <rect key="frame" x="0.0" y="44" width="305" height="72"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试数据" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwJ-21-Vvm">
+                                <rect key="frame" x="16" y="25.5" width="69.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rwJ-21-Vvm" firstAttribute="leading" secondItem="raP-AN-9b1" secondAttribute="leading" constant="16" id="7es-oy-OHV"/>
+                            <constraint firstItem="rwJ-21-Vvm" firstAttribute="centerY" secondItem="raP-AN-9b1" secondAttribute="centerY" id="MPW-57-Cgp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="bottom" secondItem="raP-AN-9b1" secondAttribute="bottom" id="Ab7-ic-EQm"/>
+                <constraint firstItem="jag-1O-cOi" firstAttribute="centerY" secondItem="EiW-Sx-kTX" secondAttribute="centerY" id="Gza-HZ-oED"/>
+                <constraint firstItem="raP-AN-9b1" firstAttribute="top" secondItem="SEy-5g-ep8" secondAttribute="top" id="bnQ-iJ-fvy"/>
+                <constraint firstItem="EiW-Sx-kTX" firstAttribute="height" secondItem="SEy-5g-ep8" secondAttribute="height" id="ekf-b9-LRc"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="trailing" secondItem="EiW-Sx-kTX" secondAttribute="trailing" id="lYv-68-UuU"/>
+                <constraint firstItem="jag-1O-cOi" firstAttribute="width" secondItem="EiW-Sx-kTX" secondAttribute="width" id="mpP-Sk-Zmb"/>
+                <constraint firstItem="EiW-Sx-kTX" firstAttribute="centerY" secondItem="SEy-5g-ep8" secondAttribute="centerY" id="nDT-8z-AGW"/>
+                <constraint firstItem="jag-1O-cOi" firstAttribute="height" secondItem="EiW-Sx-kTX" secondAttribute="height" id="nxY-JY-OC6"/>
+                <constraint firstItem="raP-AN-9b1" firstAttribute="leading" secondItem="SEy-5g-ep8" secondAttribute="leading" id="t2y-SH-8WX"/>
+                <constraint firstItem="EiW-Sx-kTX" firstAttribute="leading" secondItem="jag-1O-cOi" secondAttribute="trailing" id="ukA-Ok-tfA"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="trailing" secondItem="raP-AN-9b1" secondAttribute="trailing" id="xbB-Dt-45H"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="305" height="150"/>
+            <connections>
+                <outlet property="bgView" destination="raP-AN-9b1" id="Dqr-fk-rsp"/>
+            </connections>
+            <point key="canvasLocation" x="322.46376811594206" y="156.69642857142856"/>
+        </collectionViewCell>
+    </objects>
+</document>
